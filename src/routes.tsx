@@ -2,7 +2,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import Home from './components/Home';
+import Home from './views/Home';
+import About from './views/About';
+import Contact from './views/Contact';
 
 const AppRouter: React.FC = () => {
   return (
@@ -12,6 +14,21 @@ const AppRouter: React.FC = () => {
           element={
             <Layout>
               <Home />
+            </Layout>
+          }
+        />
+        <Route path="/about" 
+          element={
+            <Layout>
+              <About />
+            </Layout>
+          }
+        />
+
+        <Route path="/contact" 
+          element={
+            <Layout>
+              <Contact />
             </Layout>
           }
         />

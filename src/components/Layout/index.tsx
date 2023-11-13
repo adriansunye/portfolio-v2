@@ -1,7 +1,7 @@
 // src/components/Layout.tsx
 import React, { ReactNode } from 'react';
 import './index.scss'
-import SideBar from '@components/SideBar';
+import Sidebar from '@components/Sidebar';
 
 interface LayoutProps {
   children: ReactNode;
@@ -10,7 +10,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <React.Fragment>
-      <SideBar/>
+      <Sidebar/>
     </React.Fragment>
   );
 };
